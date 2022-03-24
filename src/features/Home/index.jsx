@@ -1,10 +1,12 @@
-import React from 'react'
-import Footer from '../../components/Footer'
+import React from "react";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 
 export default function Home() {
   return (
     <div className="main-wrapper">
-      <Footer/>
+      <Header />
+      <Footer />
     </div>
-  )
+  );
 }
