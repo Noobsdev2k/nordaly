@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import {headerConfig} from "./headerConfig"
 
 export default function Bottom() {
   return (
@@ -8,21 +10,12 @@ export default function Bottom() {
           <div className="main-menu main-menu-padding-2 main-menu-center main-menu-font-width-400 main-menu-lh-1">
             <nav>
               <ul>
-                <li>
-                  <a href="#">HOME </a>
-                </li>
-                <li>
-                  <a href="#">SHOP </a>
-                </li>
-                <li>
-                  <a href="#">PAGES </a>
-                </li>
-                <li>
-                  <a href="blog.html">BLOG </a>
-                </li>
-                <li>
-                  <a href="contact.html">CONTACT </a>
-                </li>
+                {headerConfig.map(({path, title}, index) => (
+                  <li key={index}>
+                    <Link to={path} >{title}</Link>
+                  </li>
+                )
+                )}
               </ul>
             </nav>
           </div>

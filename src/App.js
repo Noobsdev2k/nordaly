@@ -1,9 +1,10 @@
-import Home from "./features/Home";
+import Routes from "./router/Routes";
 import "./sass/app.scss";
+
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Routes/>
     </div>
   );
 }
