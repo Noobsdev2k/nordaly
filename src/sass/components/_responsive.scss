@@ -1,3 +1,14 @@
+@media #{$small-desktop} {
+  .slick-arrow {
+    &.slick-next {
+      right: 10px !important;
+    }
+    &.slick-prev {
+      left: 10px !important;
+    }
+  }
+
+}
 @media #{$tablet} {
 }
 @media #{$small-tablet} {
