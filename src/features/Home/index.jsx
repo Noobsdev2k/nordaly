@@ -1,12 +1,6 @@
 import React from "react";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import Banner from "../../components/Banner";
 
 export default function Home() {
-  return (
-    <div className="main-wrapper">
-      <Header />
-      <Footer />
-    </div>
-  );
+  return <Banner />;
 }
